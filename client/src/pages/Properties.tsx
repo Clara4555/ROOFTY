@@ -88,6 +88,9 @@ export default function Properties() {
             <SelectItem value="apartment">Apartment</SelectItem>
             <SelectItem value="condo">Condo</SelectItem>
             <SelectItem value="villa">Villa</SelectItem>
+            <SelectItem value="townhouse">Townhouse</SelectItem>
+            <SelectItem value="loft">Loft</SelectItem>
+            <SelectItem value="duplex">Duplex</SelectItem>
           </SelectContent>
         </Select>
       </div>
