@@ -104,7 +104,7 @@ export default function SearchBar({ onSearch, className = "" }: SearchBarProps) 
                 <SelectValue placeholder="All Types" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Types</SelectItem>
+                <SelectItem value="all">All Types</SelectItem>
                 <SelectItem value="house">House</SelectItem>
                 <SelectItem value="apartment">Apartment</SelectItem>
                 <SelectItem value="condo">Condo</SelectItem>
@@ -124,7 +124,7 @@ export default function SearchBar({ onSearch, className = "" }: SearchBarProps) 
                 <SelectValue placeholder="Any Price" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Any Price</SelectItem>
+                <SelectItem value="any">Any Price</SelectItem>
                 <SelectItem value="100000-300000">$100k - $300k</SelectItem>
                 <SelectItem value="300000-500000">$300k - $500k</SelectItem>
                 <SelectItem value="500000-1000000">$500k - $1M</SelectItem>
