@@ -137,6 +137,4 @@ This project is for demonstration purposes. Please check individual dependencies
 
 ## Support
 
-For questions or issues, please contact the development team or create an issue in the repository.# Roofty - Real Estate Website
-
-A modern, responsive real estate website built with Vite, React, TypeScript, and Tailwind CSS. Features property listings, search functionality, and elegant animations.
+For questions or issues, please contact the development team or create an issue in the repository.
