@@ -36,7 +36,7 @@ export default function SearchBar({ onSearch, className = "" }: SearchBarProps) 
       // Navigate to properties page with search params
       const params = new URLSearchParams();
       if (searchData.location) params.set("city", searchData.location);
-      if (searchData.propertyType) params.set("propertyType", searchData.propertyType);
+      if (searchData.propertyType && searchData.propertyType !== "all") params.set("propertyType", searchData.propertyType);
       if (searchData.type) params.set("type", searchData.type);
       
       setLocation(`/properties?${params.toString()}`);
