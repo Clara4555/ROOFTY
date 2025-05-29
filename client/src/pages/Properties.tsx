@@ -52,7 +52,13 @@ export default function Properties() {
   });
 
   const updateFilter = (key: keyof PropertyFilters, value: any) => {
-    setFilters(prev => ({ ...prev, [key]: value }));
+    if (value === "all" || value === "any") {
+      const newFilters = { ...filters };
+      delete newFilters[key];
+      setFilters(newFilters);
+    } else {
+      setFilters(prev => ({ ...prev, [key]: value }));
+    }
   };
 
   const clearFilters = () => {
